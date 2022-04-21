@@ -25,27 +25,28 @@
 
         // step 1
         // Create const for conversion
-        const conversion = 1000;
+        const factor = 0.621371;
 
 
         // step 2
         // Get user input and save to variable
-        let numone = prompt("Enter first variable");
+        const kilometers = prompt("Enter first variable");
        
 
 
         // step 3
         // Perform calculation and save result
-        let numtwo = 
-          (numone/conversion);
+        const miles = kilometers * factor
         
 
 
         // step 4
         // Display result in DOM, alert or console
-        console.log("The distance of " + numtwo + "km after being converted is " + numone + " in miles");
+      //  console.log('${kilometers} kilometers is equal to ${miles} miles.');
 
-        </script>
+       alert(miles + ' miles');
+       console.log(miles +' miles')
+       </script>
         <!-- End of Script -->
 
     </body>
